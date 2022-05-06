@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ebfcb1ae-8289-4432-9a33-97ba9eba9d53": {
+      "ProjectGuid": "ebfcb1ae-8289-4432-9a33-97ba9eba9d53",
+      "DisplayName": "BMR_Movies",
+      "ColorIndex": 0
+    },
+    "57985cb9-b160-4926-8748-a3178892395d": {
+      "ProjectGuid": "57985cb9-b160-4926-8748-a3178892395d",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
