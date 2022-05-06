@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/signupUser.css">
+        <title>Freska Market</title>
+        <link rel="shortcut icon" href="IMAGE/logo.jpeg" />
+        <script src="signupuser_ar.js"></script>
+    </head>
+    <body>
+        <div dir="rtl" lang="ar">
+            <div id="Hader"><!--Header-->
+                <h1>
+                    <img src="IMAGE/logo2.jpeg" alt="logo" width="150px">
+                    فريسكا سوبرماركت
+                </h1>
+            </div>
+            <br><br>
+            <div class="topnav" id="myTopnav">
+                <a href="Home_arb.html" class="active">الصفحة الرئيسية</a>
+                <a href="#contact">تواصل معنا</a>
+                <a href="#about">المعلومات عنا</a>
+                <a href="Signup_user_eng.html">Eng</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            <div id="tit"><!--Title-->
+                <img src="IMAGE/user.jpeg" width="100px">
+                انشاء حساب مستخدم جديد
+            </div>
+            <br/>
+            <div id="body"><!--body-->
+                <form onsubmit="return validation()" method="post" name="regForm" action="signup_user.php">
+                <label>الاسم:</label>
+                <input type="text" name="firstname" placeholder="ادخل اسمك:">
+                <br/>
+                <br/>
+                <br/>
+                <label>اسم العائلة:</label>
+                <input type="text" name="lastname" placeholder="ادخل اسم العائلة:">
+                <br/>
+                <br/>
+                <br/>
+                <label>العمر:</label>
+                <input type="number" name="age" placeholder="ادخل العمر">
+                <br/>
+                <br/>
+                <br/>
+                <label>الجنس</label>
+                <select name="Gender">
+                <option value="male">ذكر</option>
+                <option value="female">انثي</option>
+            </select>
+            <br/>
+            <br/>
+            <br/>
+            <label>ادخل رقم الهاتف:</label>
+            <input type="text" name="phoneNumber"placeholder="ادخل رقم الهاتف:">
+            <br/>
+            <br/>
+            <br/>
+            <label>العنوان:</label>
+            <input type="text" name="Address" placeholder="ادخل العنوان:">
+            <br/>
+            <br/>
+            <br/>
+            <label>البريد الاكتروني:</label>
+            <input type="text" name="email" placeholder="أدخل البريد الالكتروني:">
+            <br/>
+            <br/>
+            <br/>
+            <label>اضافة كلمة السر:</label>
+            <input type="Password" name="password" placeholder="ادخل كلمة السر:" >
+            <br/>
+            <br/>
+            <br/>
+            <label>تاكيد كلمة السر:</label>
+            <input type="Password" name="cpassword" placeholder="تاكيد كلمة السر:">
+            <br/>
+            <br/>
+            <br/>
+            <div id="bt">
+                <input type="submit" value="حفظ البيانات"/>
+                <input type="reset" value="ازالة البيانات" onclick="clear2();">
+            </div>
+            </form>
+</div>
+    </body>
+</html>

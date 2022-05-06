@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <Title>Freska Market</Title>
+    <link rel="shortcut icon"  href="IMAGE/logo.jpeg">
+    <link  rel="stylesheet" type="text/css" href="CSS/loginEmployee.css"> 
+    <script src="loginEmployees.js"></script>
+</head>
+<body>
+    <div><!--Page-->
+    <div id="Hader"><!--Header-->
+        <h1>
+            <img src="IMAGE/logo2.jpeg" alt="logo" width="150px">
+            Freska Market
+        </h1>
+    </div>
+    <br><br>
+    <div class="topnav" id="myTopnav">
+        <a href="Home_eng.html" class="active">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="Home_eng.html">Back</a>
+        <a href="Login_Employee_arb.html">Arabic</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="fotter"><!--Fotter-->
+        <tfoot>Login Employee:</tfoot>
+    </div>
+    <div id="body"><!--body-->
+        <form name="loginForm" method="post" action="loginEmployee.php">
+        <img src="IMAGE/employee.jpeg" width="110px">
+            <p>Enter Your Email:</p>
+            <br>
+            <label>User Name:</label>
+            <input type="text" name="email"  placeholder="Enter Email:" required >
+            <br><br>
+            <label>Password:</label>
+            <input type="password" name="password"  required placeholder="Enter Password:">
+            <br><br>
+            <input type="submit"  value="Login" >
+        </form>
+    </div>
+    
+</div>
+</body>
+</html>

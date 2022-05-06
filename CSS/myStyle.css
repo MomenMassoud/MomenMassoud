@@ -1,0 +1,111 @@
+.contenar{
+    display: grid;
+    grid-auto-rows: minmax(100px,auto);
+    grid-template-areas:
+    "head head head head head head head"
+    "sll sll sll sll sll sll sll"
+    "sl sl sl cont cont cont cont"
+    "sl sl sl cont cont cont cont"
+    "sl sl sl cont cont cont cont"
+    "sl sl sl cont cont cont cont"
+    ;
+    grid-gap: 5px;
+}
+
+
+
+.box{
+    background: #aaa;
+    color: #fff;
+    text-align: center;
+}
+.head{
+    grid-area: head;
+    background-color: blue;
+}
+.sidelef{
+    grid-area: sl;
+    background-image:url("logo3.jpeg" );
+    width: 700px;
+    height: 900px;
+}
+.sideleff{
+    grid-area: sll;
+    background-color: #fff;
+}
+.contect{
+    padding-top: 250px;
+    grid-area: cont;
+    background-color: aqua;
+    color: black;
+    width: 600px;
+    text-align: center;
+}
+
+#sideMenu {
+	width: 0;
+	height: 100%;
+	overflow-x: hidden;
+	background: aqua;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	transition: 0.3s;
+}
+
+#sideMenu ul li {
+	list-style-type: none;
+	padding-bottom: 20px;
+}
+
+#sideMenu ul li a {
+	text-decoration: none;
+	color: gray;
+	font-size: 24px;
+	transition: 0.3s;
+}
+
+#sideMenu ul li a:hover {
+	color: black;
+	transition: 0.3s;
+}
+
+.closeBtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px !important;
+}
+.topnav {
+    background-color: aqua;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: blue;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }

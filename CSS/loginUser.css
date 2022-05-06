@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+#Hader{
+    font-family: verdana;
+    font-size: 30px;
+    height: 350 px;
+   padding: 30px;
+   background-color: blue;
+} 
+#body{
+    font-family: verdana;
+    font-size: 30px;
+    margin: 60px;
+    height: 350 px;
+   padding: 30px;
+   text-align: center;
+   background-color:deepskyblue;
+}
+#fotter{
+    font-family: verdana;
+    font-size: 30px;
+    text-align: center;
+    margin: 30px;
+    background-color:deepskyblue;
+    height: 350 px;
+    padding: 30px;
+}

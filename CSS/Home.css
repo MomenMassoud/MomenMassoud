@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+#fotter{
+    background-color: blue;
+    font-size: 60px;
+    text-align: center;
+    padding: 20px;
+}
+.body{
+    text-align: center;
+    font-size: 60px;
+    background-color: aqua;
+    padding: 10px;
+}
+.tail{
+    text-align: center;
+    font-size: 90px;
+    background-color: aqua;
+    padding: 20px;
+}
+.log{
+    text-align: left;
+    font-size: medium;
+    font-style: italic;
+    font-family: bold;
+    background-color: aqua;
+}

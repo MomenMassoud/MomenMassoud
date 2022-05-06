@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/signupEmployee.css">
+        <title>Freska Market</title>
+        <link rel="shortcut icon" href="IMAGE/logo.jpeg" />
+        <script src="signupemployee_arb.js"></script>
+    </head>
+    <body>
+        <div dir="rtl" lang="ar"><!--Page-->
+            <div  id="Hader"><!--Header-->
+                <h1>
+                    <img src="IMAGE/logo2.jpeg" alt="logo" width="150px">
+                    فريسكا سوبرماركت
+                </h1>
+            </div>
+            <br><br>
+            <div class="topnav" id="myTopnav">
+                <a href="Adminpage_arb.html" class="active">الصفحة الرئيسية</a>
+                <a href="#contact">تواصل معنا</a>
+                <a href="#about">معلومات عنا</a>
+                <a href="Adminpage_arb.html">العودة</a>
+                <a href="Signup_employee_eng.html">ENG</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            <div id="tit" ><!--Title-->
+                <img src="IMAGE/employee.jpeg" width="100px">
+                أنشاء حساب لموظف جديد
+            </div>
+            <br/>
+            <div id="body"><!--Body-->
+                <form onsubmit="return validation()" method="post" name="regForm" action="signup_employee.php">
+                <label>ألاسم:</label>
+                <input type="text" name="firstname" placeholder="ادخل اسم الموظف:">
+                <br/>
+                <br/>
+                <br/>
+                <label>اسم العائلة:</label>
+                <input type="text" name="lastname" placeholder="ادخل اسم العائلة:">
+                <br/>
+                <br/>
+                <br/>
+                <label>العمر:</label>
+                <input type="number" name="age" placeholder="ادخل عمر الموظف:" >
+                <br/>
+                <br/>
+                <br/>
+                <label>الجنس</label>
+                <select name="Gender">
+                <option value="male">ذكر</option>
+                <option value="female">انثي</option>
+            </select>
+            <br/>
+            <br/>
+            <br/>
+            <label>رقم الهاتف:</label>
+            <input type="text" name="phoneNumber"placeholder="ادخل رقم الهاتف:">
+            <br/>
+            <br/>
+            <br/>
+            <label>العنوان:</label>
+            <input type="text" name="Address" placeholder="ادخل العنوان:">
+            <br/>
+            <br/>
+            <br/>
+            <label>البريد الاكتروني:</label>
+            <input type="text" name="email" placeholder="ادخل البريدالاكتروني:">
+            <br/>
+            <br/>
+            <br/>
+            <label>اضافة كلمة السر:</label>
+            <input type="Password" name="password" placeholder="ادخل كلمة السر:">
+            <br/>
+            <br/>
+            <br/>
+            <label>تاكيد كلمة السر:</label>
+            <input type="Password" name="cpassword" placeholder="اعد كتابة كلمة السر:">
+            <br/>
+            <br/>
+            <br/>
+            <label>الراتب الشهري:</label>
+            <input type="number" name="salary" placeholder="ادخل الراتب:">
+            <br/>
+            <br/>
+            <br/>
+            <label>الفرع:</label>
+            <input type="text" name="Barnch" placeholder="الفرع:">
+            <br/>
+            <br/>
+            <br/>
+            <label>الرقم القومي:</label>
+            <input type="text" name="NationalID" placeholder="الرقم القومي:">
+            <br/>
+            <div id="bt">
+                <input type="submit" value="حفظ البيانات">
+                <input type="reset" value="مسح البيانات" onclick="clear2();">
+            </div>
+        </form>
+        </div>
+
+</div>
+    </body>
+</html>

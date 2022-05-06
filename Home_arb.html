@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Freska Market</title>
+    <link rel="stylesheet" href="CSS/myStyle.css">
+    <link rel="shortcut icon" href="IMAGE/logo.jpeg">
+    <script src="loginuser_arb.js"></script>
+</head>
+
+<body>
+    <div class="contenar" dir="rtl" lang="ar">
+        <div class="box head">
+            <h1>
+                <img src="IMAGE/logo2.jpeg" width="160px">
+                اهلا بكم في سوبر ماركت فريسكا
+                <img src="IMAGE/menu.png" width="30px" onclick="openMenu();">
+                <div id="sideMenu">
+                    <ul>
+                        <li><a href="#" class="closeBtn" onclick="closeMenu();">&times;</a></li>
+                        <li><a href="Home_arb.html">الصفحة الرئيسة</a></li>
+                        <li><a href="Home_arb.html">تسجيل الدخول</a></li>
+                        <li><a href="Signup_user_arb.html">انشاء حساب</a></li>
+                        <li><a href="#">حول الموقع</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </h1>
+        </div>
+        <div class="box sideleff">
+            <div class="topnav" id="myTopnav">
+                <a href="Home_arb.html" class="active">الصفحة الرئيسية</a>
+                <a href="Signup_user_arb.html">الاخبار</a>
+                <a href="#contact">تواصل معنا</a>
+                <a href="#about">المعلومات</a>
+                <a href="Home_eng.html">ENG</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+        </div>
+        <div class="box sidelef">
+
+        </div>
+        <div class="box contect">
+            <h2>تسجيل الدخول كمستخدم</h2>
+            <form onsubmit="return validation()" method="post" name="regForm" action="loginuser_arb.php">
+                <label>البريد الالكتروني:</label>
+                <input type="text" name="username" placeholder="ادخل اسم المستخدم:">
+                <br><br>
+                <label>كلمة السر:</label>
+                <input type="password" name="password" placeholder="ادخل كلمة السر:">
+                <br><br>
+                <input type="submit" value="تسجيل الدخول" >
+                <input type="reset" value="محو البيانات" onclick="clear2();">
+                <a href="Signup_user_arb.html"><input type="button" value="انشاء حساب جديد" name="signup"></a>
+            </form>
+            <p>--------------------------------او تسجيل الدخول ك-----------------------------------</p>
+            <a href="Login_admin_arb.html"><img src="IMAGE/admin.jpeg" width="150px"></a>
+            <i>مسؤول</i>
+            <br><br>
+            <a href="Login_Employee_arb.html"><img src="IMAGE/employee.jpeg" width="150px"></a>
+            <i>موظف</i>
+        </div>
+
+    </div>
+</body>
+
+</html>

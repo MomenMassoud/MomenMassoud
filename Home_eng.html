@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Freska Market</title>
+    <style>
+        .contenar {
+            display: grid;
+            grid-auto-rows: minmax(100px, auto);
+            grid-template-areas:
+                "head head head head head head head"
+                "sll sll sll sll sll sll sll"
+                "sl sl sl cont cont cont cont"
+                "sl sl sl cont cont cont cont"
+                "sl sl sl cont cont cont cont"
+                "sl sl sl cont cont cont cont"
+            ;
+            grid-gap: 5px;
+        }
+
+
+
+        .box {
+            background: #aaa;
+            color: #fff;
+            text-align: center;
+        }
+
+        .head {
+            grid-area: head;
+            background-color: blue;
+        }
+
+        .sidelef {
+            grid-area: sl;
+            background-image: url("logo3.jpeg");
+            width: 700px;
+            height: 900px;
+        }
+
+        .sideleff {
+            grid-area: sll;
+            background-color: #fff;
+        }
+
+        .contect {
+            padding-top: 250px;
+            grid-area: cont;
+            background-color: aqua;
+            color: black;
+            width: 600px;
+            text-align: center;
+        }
+
+        #sideMenu {
+            width: 0;
+            height: 100%;
+            overflow-x: hidden;
+            background: aqua;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: 0.3s;
+        }
+
+        #sideMenu ul li {
+            list-style-type: none;
+            padding-bottom: 20px;
+        }
+
+        #sideMenu ul li a {
+            text-decoration: none;
+            color: gray;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+
+        #sideMenu ul li a:hover {
+            color: black;
+            transition: 0.3s;
+        }
+
+        .closeBtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px !important;
+        }
+
+        .topnav {
+            background-color: aqua;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add an active class to highlight the current page */
+        .topnav a.active {
+            background-color: blue;
+            color: white;
+        }
+
+        /* Hide the link that should open and close the topnav on small screens */
+        .topnav .icon {
+            display: none;
+        }
+    </style>
+    <link rel="shortcut icon" href="IMAGE/logo.jpeg">
+</head>
+
+<body>
+    <script>
+        function login() {
+            var valid = true;
+            formLabels = document.getElementsByTagName("label");
+            var username = document.regForm.username.value;
+            var password = document.regForm.password.value;
+            if (username == "") {
+                formLabels[0].innerHTML = "User Name: [Required]";
+                formLabels[0].style = "color: red";
+                valid = false;
+            }
+            else if (!isNaN(username)) {
+                formLabels[0].innerHTML = "User Name: [Text Only]";
+                formLabels[0].style = "color: red";
+                valid = false;
+            }
+            else {
+                formLabels[0].innerHTML = "user Name:";
+                formLabels[0].style = "color: black";
+                valid = (valid) ? true : false;
+            }
+            if (password == "") {
+                formLabels[1].innerHTML = "Password: [Required]";
+                formLabels[1].style = "color: red";
+                valid = false;
+            }
+            else if (password.length < 8) {
+                formLabels[1].innerHTML = "Password: [Must be > 8]";
+                formLabels[1].style = "color: red";
+                valid = false;
+            }
+            else {
+                formLabels[7].innerHTML = "Password:";
+                formLabels[7].style = "color: black";
+                valid = (valid) ? true : false;
+            }
+            if (username == "user" && password == "12345") {
+                window.location.href = "Shopping_eng.html";
+            }
+            else {
+                alert("wrong login");
+            }
+            return valid;
+        }
+        function clear2() {
+            var myArray = new Array();
+            myArray[0] = "User Name:";
+            myArray[1] = "Password:";
+            for (var i = 0; i < myArray.length; i++) {
+                formLabels[i].innerHTML = myArray[i];
+                formLabels[i].style = "color: black";
+            }
+        }
+        function openMenu() {
+            var menu = document.getElementById("sideMenu");
+            menu.style.width = "250px";
+        }
+
+        function closeMenu() {
+            var menu = document.getElementById("sideMenu");
+            menu.style.width = "0";
+        }
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <div class="contenar">
+        <div class="box head">
+            <h1>
+                <img src="IMAGE/logo2.jpeg" width="160px">
+                Welcome in Freska SuperMarket
+                <img src="IMAGE/menu.png" width="30px" onclick="openMenu();">
+                <div id="sideMenu">
+                    <ul>
+                        <li><a href="#" class="closeBtn" onclick="closeMenu();">&times;</a></li>
+                        <li><a href="Home_eng.html">Home</a></li>
+                        <li><a href="Home_eng.html">Login</a></li>
+                        <li><a href="Signup_user_eng.html">Register</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </h1>
+        </div>
+        <div class="box sideleff">
+            <div class="topnav" id="myTopnav">
+                <a href="Home_eng.html" class="active">Home</a>
+                <a href="Signup_user_eng.html">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="Home_arb.html">Arabic</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div class="box sidelef">
+
+        </div>
+        <div class="box contect">
+            <h2>Login As User</h2>
+            <form onsubmit="return validation()" method="post" name="regForm" action="loginuser.php">
+                <label>Email:</label>
+                <input type="text" name="username" placeholder="Enter User Name:">
+                <br><br>
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Enter Password:">
+                <br><br>
+                <input type="submit" value="Login in">
+                <input type="reset" value="Clear Data" onclick="clear2();">
+                <a href="Signup_user_eng.html"><input type="button" value="Signup" name="signup"></a>
+            </form>
+            <p>--------------------------------OR Login AS-----------------------------------</p>
+            <a href="Login_admin_eng.html"><img src="IMAGE/admin.jpeg" width="150px"></a>
+            <i>Login Admin!</i>
+            <br><br>
+            <a href="Login_Employee_eng.html"><img src="IMAGE/employee.jpeg" width="150px"></a>
+            <i>Login Employee!</i>
+        </div>
+
+    </div>
+</body>
+
+</html>

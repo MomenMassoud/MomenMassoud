@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <Title>Freska Market</Title>
+    <link rel="stylesheet" type="text/css" href="CSS/AddIteams.css">
+    <link rel="shortcut icon" href="IMAGE/logo.jpeg">
+    <script  src="Additems.js"></script>
+</head>
+
+<body>
+    <div>
+        <!--Page-->
+        <div id="Hader">
+            <!--Head-->
+            <h1>
+                <img src="IMAGE/logo2.jpeg" alt="logo" width="100px">
+                Freska Market
+            </h1>
+        </div>
+        <br>
+        <div class="topnav" id="myTopnav">
+            <a href="Adminpage_eng.html" class="active">Home</a>
+            <a href="Adminpage_eng.html">Back</a>
+            <a href="#contact">Contact</a>
+            <a href="Additem_arb.html">Arabic</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <br>
+        <div id="fotter">
+            <!--Title-->
+            Add New Iteams
+            <img src="IMAGE/admin.jpeg" width="80px">
+        </div>
+        <div id="body">
+            <!--Body-->
+            <form onsubmit="return validation()" method="post" name="regForm">
+            <label>Name Of Iteam:</label>
+            <input type="text" name="name"  >
+            <br />
+            <br />
+            <label>Price Of Iteam:</label>
+            <input type="number" name="price"  min="0" >
+            <br>
+            <br />
+            
+                <input type="file" id="myFile" name="filename">
+                <input type="submit" value="Save">
+                <input type="reset" value="Clear" onclick="clear2();">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

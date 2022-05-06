@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <Title>Freska Market</Title>
+    <link rel="shortcut icon"  href="IMAGE/logo.jpeg">
+    <link  rel="stylesheet" type="text/css" href="CSS/loginAdmin.css"> 
+</head>
+<body>
+    <div dir="rtl" lang="ar"><!--Page-->
+    <div id="Hader"><!--Header-->
+        <h1>
+            <img src="IMAGE/logo2.jpeg" alt="logo" width="150px">
+            فريسكا ماركت
+        </h1>
+    </div>
+    <br><br>
+    <div class="topnav" id="myTopnav">
+        <a href="Home_arb.html" class="active">الصفحة الرئيسية</a>
+        <a href="#contact">تواصل ممعنا</a>
+        <a href="#about">معلومات عنا</a>
+        <a href="Home_arb.html">العودة</a>
+        <a href="Login_admin_eng.html">ENG</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div id="fotter"><!--Fotter-->
+        <tfoot>تسجيل الدخول كمسؤول</tfoot>
+    </div>
+    <div id="body"><!--body-->
+        <form name="loginForm" method="post" action="loginAdmin_arb.php">
+        <img src="IMAGE/admin.jpeg" width="110px">
+            <p>أدخل البريد الاكتروني</p>
+            <br>
+            <label>اسم المستخدم:</label>
+            <input type="text" name="email"  placeholder="ادخل البريد الالكتروني" required >
+            <br><br>
+            <label>كلمة السر:</label>
+            <input type="password" name="password"  required placeholder="ادخل كلمة السر">
+            <br><br>
+            <input type="submit"  value="تسجيل الدخول">
+        </form>
+    </div>
+</div>
+</body>
+</html>

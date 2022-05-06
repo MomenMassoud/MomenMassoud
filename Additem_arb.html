@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <Title>Freska Market</Title>
+    <link rel="stylesheet" type="text/css" href="CSS/AddIteams.css">
+    <link rel="shortcut icon" href="IMAGE/logo.jpeg">
+    <script src="Additems_arb.js"></script>
+</head>
+
+<body>
+    <div dir="rtl" lang="ar">
+        <!--Page-->
+        <div id="Hader">
+            <!--Head-->
+            <h1>
+                <img src="IMAGE/logo2.jpeg" alt="logo" width="100px">
+                فريسكا ماركت
+            </h1>
+        </div>
+        <br>
+        <div class="topnav" id="myTopnav">
+            <a href="Adminpage_arb.html" class="active">الصفحة الرئيسية</a>
+            <a href="Adminpage_arb.html">العودة</a>
+            <a href="#contact">تواصل معنا</a>
+            <a href="Additem_eng.html">ENG</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div id="fotter">
+            <!--Title-->
+            أضافة منتج جديد
+            <img src="IMAGE/admin.jpeg" width="80px">
+        </div>
+        <div id="body">
+            <!--Body-->
+            <form onsubmit="return validation()" method="post" name="regForm">
+            <label>أسم المنتج:</label>
+            <input type="text" name="name" >
+            <br />
+            <br />
+            <label>سعر المنتج:</label>
+            <input type="number" name="price"  min="0" >
+            <br>
+            <br />
+                <input type="file" id="myFile" name="filename">
+                <input type="submit" value="حفظ البيانات ">
+                <input type="reset" value="حذف البيانات" onclick="clear2();">
+        </form>
+        </div>
+    </div>
+</body>
+
+</html>
