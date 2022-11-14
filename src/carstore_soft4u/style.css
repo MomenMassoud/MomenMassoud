@@ -1,0 +1,6 @@
+.root{
+    -fx-background-image: url('back.jpg');
+}
+.button5 {
+    -fx-border-radius: 50%;
+}

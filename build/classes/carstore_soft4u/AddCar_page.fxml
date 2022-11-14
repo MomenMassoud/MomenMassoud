@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carstore_soft4u.AddCar_Controller">
+   <children>
+      <VBox layoutX="-2.0" prefHeight="700.0" prefWidth="1327.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="1327.0">
+               <children>
+                  <Label text="اضافة سيارة جديدة">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="75.0" prefWidth="1327.0">
+               <children>
+                  <Label fx:id="Error_carnumber" />
+                  <TextField fx:id="carnumber" prefHeight="25.0" prefWidth="218.0" promptText="ادخل رقم السيارة" />
+                  <Label text="رقم السيارة:">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="83.0" prefWidth="1327.0">
+               <children>
+                  <Label fx:id="Error_carowner" />
+                  <TextField fx:id="carowner" prefHeight="25.0" prefWidth="218.0" promptText="ادخل اسم صاحب السيارة" />
+                  <Label text="اسم صاحب السيارة:">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="71.0" prefWidth="1327.0">
+               <children>
+                  <Label fx:id="Error_ownerID" />
+                  <TextField fx:id="ownerID" prefHeight="25.0" prefWidth="218.0" promptText="ادخل الرقم القومي" />
+                  <Label text="رقم القومي لصاحب السيارة:">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="1327.0">
+               <children>
+                  <Label fx:id="Error_carmodel" />
+                  <TextField fx:id="carmodel" prefHeight="25.0" prefWidth="218.0" promptText="ادخل موديل السيارة" />
+                  <Label text="موديل السيارة:">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="82.0" prefWidth="1327.0">
+               <children>
+                  <Label fx:id="Error_caryear" />
+                  <TextField fx:id="caryear" prefHeight="25.0" prefWidth="218.0" promptText="سنة السيارة" />
+                  <Label text="سنة السيارة:">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="102.0" prefWidth="1327.0">
+               <children>
+                  <Label fx:id="Error_carcolor" />
+                  <TextField fx:id="carcolor" prefHeight="25.0" prefWidth="218.0" promptText="لون السيارة" />
+                  <Label text="لون السيارة:">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="102.0" prefWidth="1327.0">
+               <children>
+                  <Label fx:id="Error_pay" />
+                  <TextField fx:id="pay" prefHeight="25.0" prefWidth="218.0" promptText="سعر السيارة:" />
+                  <Label text="سعر السيارة في اليوم:">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="178.0" prefWidth="1327.0">
+               <children>
+                  <TextArea fx:id="carnote" prefHeight="178.0" prefWidth="456.0" />
+                  <Label fx:id="Error_carnote" />
+                  <Label text="ملاحظات عن السيارة:">
+                     <font>
+                        <Font size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="1327.0" spacing="230.0">
+               <children>
+                  <Button fx:id="backBT" mnemonicParsing="false" onAction="#back_Page" prefHeight="38.0" prefWidth="164.0" text="الرجوع">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Add_Car" prefHeight="38.0" prefWidth="164.0" text="حفظ البيانات">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>
