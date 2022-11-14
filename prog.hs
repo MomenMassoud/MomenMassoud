@@ -1,0 +1,11 @@
+len' [] = 0
+len' xs = 1 + len' (tail xs)
+last' xs = xs !! (len' xs-1)
+lastButOne xs = xs !! (len' xs-2)
+drop' n xs = reverse (take (length xs - n) (reverse xs))
+inBetween [x] = []
+inBetween [] =[]
+inBetween xs = tail (take (len' xs-1) xs)
+inBet [] = []
+inBet [x] = []
+inBet xs = init $ tail xs
