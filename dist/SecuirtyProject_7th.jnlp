@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SecuirtyProject_7th.jnlp">
+  <information>
+    <title>SecuirtyProject_7th</title>
+    <vendor>mo2me</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SecuirtyProject_7th.jar" size="5215" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="SecuirtyProject_7th" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="secuirtyproject_7th.SecuirtyProject_7th"  name="SecuirtyProject_7th" />
+  <update check="always"/>
+</jnlp>
