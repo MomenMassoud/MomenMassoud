@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hotel_soft4u.empty_room_Controller">
+   <children>
+      <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="451.0" prefWidth="836.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="836.0">
+               <children>
+                  <Label text="View Empty Room" textFill="WHITE">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="836.0">
+               <children>
+                  <Label text="View Empty Room by Size:" textFill="WHITE">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="size" prefHeight="25.0" prefWidth="177.0" />
+                  <Label fx:id="sizeerror">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="836.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#viewSize" prefHeight="45.0" prefWidth="131.0" text="View">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="836.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#prev" prefHeight="45.0" prefWidth="131.0" text="prev">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="data" text="                             " textFill="WHITE">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#next" prefHeight="45.0" prefWidth="131.0" text="next">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="error">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="836.0">
+               <children>
+                  <Label text="View All Empty:" textFill="WHITE">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="836.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#viewall" prefHeight="45.0" prefWidth="131.0" text="View">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="836.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#prevall" prefHeight="45.0" prefWidth="131.0" text="prev">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="dataAll" text="                             " textFill="WHITE">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#nextall" prefHeight="45.0" prefWidth="131.0" text="next">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="57.0" prefWidth="836.0">
+               <children>
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#back_Page" prefHeight="45.0" prefWidth="131.0" text="Back">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="errorall">
+                     <font>
+                        <Font size="31.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

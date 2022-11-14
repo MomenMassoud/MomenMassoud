@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Hotel_Soft4U.jnlp">
+  <information>
+    <title>Hotel_Soft4U</title>
+    <vendor>mo2me</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Hotel_Soft4U.jar" size="1011764" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.25.jar" size="2428320" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Hotel_Soft4U" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="hotel_soft4u.Hotel_Soft4U"  name="Hotel_Soft4U" />
+  <update check="always"/>
+</jnlp>
