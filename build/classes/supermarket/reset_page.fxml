@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="supermarket.invoice_Controller">
+   <children>
+      <VBox layoutY="1.0" prefHeight="700.0" prefWidth="908.0">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="1110.0">
+               <children>
+                  <Label text="جميع الفواتير">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="tab2" prefHeight="336.0" prefWidth="908.0">
+              <columns>
+                <TableColumn fx:id="id2" prefWidth="158.0" text="رقم الفاتورة" />
+                <TableColumn fx:id="payment" minWidth="8.0" prefWidth="174.0" text="المبلغ المدفوع" />
+                  <TableColumn fx:id="balance" prefWidth="157.0" text="المتبقي" />
+                  <TableColumn fx:id="totalDATE" prefWidth="158.0" text="المبلغ المطلوب" />
+                  <TableColumn fx:id="DATETABLE" prefWidth="260.0" text="التاريخ" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tab" editable="true" prefHeight="312.0" prefWidth="908.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="187.0" sortable="false" text="رقم المنتج" />
+                  <TableColumn fx:id="name" prefWidth="266.0" text="اسم المنتج" />
+                  <TableColumn fx:id="qty" prefWidth="150.0" sortable="false" text="الكمية" />
+                  <TableColumn fx:id="price" prefWidth="156.0" sortable="false" text="سعر القطعة" />
+                  <TableColumn fx:id="total" prefWidth="148.0" text="السعر الكلي" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox layoutX="910.0" prefHeight="700.0" prefWidth="491.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="491.0">
+               <children>
+                  <Label text="البحث">
+                     <font>
+                        <Font name="System Bold Italic" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="491.0">
+               <children>
+                  <Label text="البحث بستخدام التاريخ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="date" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="البحث بستخدام رقم الفاتورة">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inNumber" onAction="#Action" onDragEntered="#Action" prefHeight="25.0" prefWidth="152.0" />
+                  <Label fx:id="Error" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="384.0" prefWidth="491.0" spacing="30.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Action" prefHeight="40.0" prefWidth="216.0" text="عرض تفاصيل الفاتورة">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="back" mnemonicParsing="false" onAction="#Action_Back" prefHeight="40.0" prefWidth="112.0" text="العودة">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

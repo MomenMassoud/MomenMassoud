@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="supermarket.home_page_Controller">
+   <children>
+      <VBox layoutY="1.0" prefHeight="700.0" prefWidth="908.0">
+         <children>
+            <HBox prefHeight="53.0" prefWidth="1110.0">
+               <children>
+                  <Label text="المبيعات">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="53.0" prefWidth="1110.0" spacing="50.0">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="152.0" text="رقم المنتج">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="53.0" prefWidth="150.0" text="اسم المنج">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text="ألعدد">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label text="السعر">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="53.0" prefWidth="201.0" text="السعر النهائي">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="27.0" prefWidth="1110.0" spacing="50.0">
+               <children>
+                  <TextField fx:id="pdCode" onAction="#Add_item" onDragEntered="#Add_item" prefHeight="25.0" prefWidth="157.0" />
+                  <TextField fx:id="pdName" prefHeight="25.0" prefWidth="147.0" />
+                  <TextField fx:id="pdQty" onAction="#Add_qty" prefHeight="25.0" prefWidth="81.0" />
+                  <TextField fx:id="pdPrice" prefHeight="25.0" prefWidth="76.0" />
+                  <TextField fx:id="pdTotal" prefHeight="25.0" prefWidth="206.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="53.0" prefWidth="916.0" spacing="30.0">
+               <children>
+                  <Button fx:id="Add" mnemonicParsing="false" onAction="#save_Table" prefHeight="25.0" prefWidth="109.0" text="اضف للعربة" />
+                  <Button mnemonicParsing="false" onAction="#del" prefHeight="25.0" prefWidth="109.0" text="ارجاع" />
+               </children>
+            </HBox>
+            <TableView fx:id="tab" editable="true" prefHeight="519.0" prefWidth="908.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="187.0" sortable="false" text="رقم المنتج" />
+                <TableColumn fx:id="name" prefWidth="158.0" text="اسم المنتج" />
+                  <TableColumn fx:id="qty" prefWidth="148.0" sortable="false" text="الكمية" />
+                  <TableColumn fx:id="price" prefWidth="186.0" sortable="false" text="السعر" />
+                  <TableColumn fx:id="totalTB" prefWidth="109.0" sortable="false" text="السعر النهائي" />
+                  <TableColumn fx:id="couItem" prefWidth="117.0" text="رقم العنصر" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox layoutX="910.0" prefHeight="700.0" prefWidth="491.0">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="491.0">
+               <children>
+                  <Label text="السعر النهائي">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="491.0">
+               <children>
+                  <TextField fx:id="Total" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="491.0">
+               <children>
+                  <Label text="المبلغ المدفوع">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="491.0">
+               <children>
+                  <TextField fx:id="Pay" onAction="#Calc" onDragEntered="#Calc" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="491.0">
+               <children>
+                  <Label text="المتبقي">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="53.0" prefWidth="491.0">
+               <children>
+                  <TextField fx:id="Balance" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="53.0" prefWidth="491.0" spacing="30.0">
+               <children>
+                  <Button fx:id="PrintBill" mnemonicParsing="false" onAction="#print_item" text="طبعاة الفاتورة">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="exitBT" mnemonicParsing="false" onAction="#EXIT" prefHeight="40.0" prefWidth="112.0" text="الخروج">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <TextArea prefHeight="330.0" prefWidth="491.0" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
