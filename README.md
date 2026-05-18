@@ -1,6 +1,6 @@
 <!-- Header Image -->
 <p align="center">
-  <img src="https://github.com/MomenMassoud/MomenMassoud/WhatsApp Image 2026-05-19 at 12.49.21 AM.jpeg" alt="Momen Massoud Header" width="100%">
+  <img src="https://github.com/MomenMassoud/MomenMassoud/cover.jpeg" alt="Momen Massoud Header" width="100%">
 </p>
 
 <!-- Title & Bio -->
