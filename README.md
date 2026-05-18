@@ -1,6 +1,6 @@
 <!-- Header Image -->
 <p align="center">
-  <img src="https://github.com/MomenMassoud/MomenMassoud/cover.jpeg" alt="Momen Massoud Header" width="100%">
+  <img src="https://github.com/MomenMassoud/MomenMassoud/blob/80fcb1a125d0cce5d9ff66c25e704d99879c21da/cover.jpeg" alt="Momen Massoud Header" width="100%">
 </p>
 
 <!-- Title & Bio -->
