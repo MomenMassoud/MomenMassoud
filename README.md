@@ -71,7 +71,7 @@
 <h2 align="center">GitHub Stats</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MomenMassoud&show_icons=true&theme=radical" alt="Momen Massoud's GitHub Stats" />
+  <img src="https://github-readme-stats-one-bice.vercel.app/api?username=MomenMassoud&show_icons=true&theme=radical" alt="Momen Massoud's GitHub Stats" />
 </p>
 
 <h2 align="center">Top Programming Languages</h2>
